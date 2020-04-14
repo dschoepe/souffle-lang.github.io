@@ -54,7 +54,7 @@ E(a,c) :- a <= c.
 F(a,c) :- a >= c.
 ```
 
-* **&#36;** is used to generate unique random values to populate a table. It should be used with care as it may result in stepping outside the standard Datalog semantics.
+* **&#36;** is used to generate unique random values to populate a table. It should be used with care as it may result in stepping outside the standard Datalog semantics. **&#36;** can be assumed to produce contiguous values within the same relation.
 ```
 .decl A (n:number)
 .decl B (a:number, b:number)
